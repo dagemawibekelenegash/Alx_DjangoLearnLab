@@ -1,0 +1,13 @@
+# delete.md
+
+# Command to delete the book
+
+book.delete()
+
+# Confirm deletion by retrieving all books
+
+Book.objects.all()
+
+# Expected Output
+
+# <QuerySet []>
