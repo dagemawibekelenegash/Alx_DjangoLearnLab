@@ -6,6 +6,7 @@ from .views import (
     CustomLogoutView,
     register,
 )
+from django.contrib.auth import login
 
 urlpatterns = [
     path("books/", list_books, name="list_books"),
