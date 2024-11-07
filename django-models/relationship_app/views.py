@@ -24,11 +24,11 @@ class LibraryDetailView(DetailView):
 
 
 class CustomLoginView(LoginView):
-    template_name = "login.html"
+    template_name = "relationship_app/login.html"
 
 
 class CustomLogoutView(LogoutView):
-    template_name = "logout.html"
+    template_name = "relationship_app/logout.html"
 
 
 def register(request):
@@ -39,7 +39,7 @@ def register(request):
             return redirect("login")
     else:
         form = UserCreationForm()
-    return render(request, "register.html", {"form": form})
+    return render(request, "relationship_app/register.html", {"form": form})
 
 
 
