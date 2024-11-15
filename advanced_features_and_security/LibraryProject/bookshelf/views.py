@@ -3,6 +3,7 @@ from django.contrib.auth.decorators import permission_required
 from .models import Document
 from .forms import DocumentForm
 from .templates.bookshelf import book_list
+from .forms import ExampleForm
 
 
 @permission_required("bookshelf.can_view", raise_exception=True)
