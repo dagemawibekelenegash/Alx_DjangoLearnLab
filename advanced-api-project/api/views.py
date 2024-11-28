@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django_filters import rest_framework
+from rest_framework import generics
 from rest_framework.generics import (
     ListAPIView,
     RetrieveAPIView,
