@@ -1,11 +1,10 @@
-from rest_framework.test import APIClient
+from rest_framework.test import APIClient, APITestCase
 from rest_framework import status
-from django.test import TestCase
-from .models import Book
 from django.contrib.auth.models import User
+from .models import Book
 
 
-class BookTests(TestCase):
+class BookTests(APITestCase):
     def setUp(self):
         self.client = APIClient()
         self.url = "/api/books/"
