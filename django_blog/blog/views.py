@@ -29,3 +29,11 @@ class UserProfileView(LoginRequiredMixin, UpdateView):
 
     def get_object(self, queryset=None):
         return self.request.user
+
+    def post(self, request, *args, **kwargs):
+        form = self.get_form()
+        if form.is_valid():
+            form.save()  
+            return super().form_valid(form)
+        else:
+            return super().form_invalid(form)
