@@ -87,3 +87,5 @@ def unfollow_user(request, user_id):
         {"detail": f"Unfollowed {user_to_unfollow.username}."},
         status=status.HTTP_200_OK,
     )
+
+#generics.GenericAPIView", "permissions.IsAuthenticated", "CustomUser.objects.all()"
